@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="san quotes">
+    <meta name="description" content="daily quotes.">
+    <meta property="og:image" content="https://i.imgur.com/m5hW3i6.jpg">
+    <title>san quotes</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+        <div class="lines">
+            <div class="text-center my-20">
+                <h1 class="text-xl text-white">
+                    select the category you want
+                </h1>
+                <br>
+                <a href="./random-quotes.html" class="shadow-lg shadow-indigo-500/40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">random-quotes</a>
+                <br>
+                <br>
+                <a href="./information.html" class="shadow-lg shadow-indigo-500/40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">information</a>
+                <br>
+                <br>
+                <a href="./nsfw.html" class="shadow-lg shadow-indigo-500/40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">nsfw.</a>
+                <br>
+                <br>
+                <a href="./sfw.html" class="shadow-lg shadow-indigo-500/40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">sfw</a>
+                <br>
+        
+        
+   
+    </div>
+</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+
+    <div class="bg-slate-900 shadow-black shadow-lg">
+        <p class="text-center ">
+            © 2024 san - all rights reserved
+        </p>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box !important;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: table;
+            width: 100%;
+            height: 100%;
+            background-color: #171717;
+            color: #000;
+            line-height: 1.6;
+            position: relative;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        
+        .lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            margin: auto;
+            width: 90vw;
+        }
+        
+        .line {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+        
+        .line::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 15vh;
+            width: 100%;
+            top: -50%;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+            -webkit-animation: drop 7s 0s infinite;
+            animation: drop 7s 0s infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+        }
+        
+        .line:nth-child(1) {
+            margin-left: -25%;
+        }
+        
+        .line:nth-child(1)::after {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+        
+        .line:nth-child(3) {
+            margin-left: 25%;
+        }
+        
+        .line:nth-child(3)::after {
+            -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+        }
+        
+        @-webkit-keyframes drop {
+            0% {
+                top: -50%;
+            }
+            100% {
+                top: 110%;
+            }
+        }
+        
+        @keyframes drop {
+            0% {
+                top: -50%;
+            }
+            100% {
+                top: 110%;
+            }
+        }
+    
+    </style>
+   <script>
+      document.addEventListener('keydown', function() {
+  if (event.keyCode == 123) {
+    alert("This function has been disabled!");
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    alert("This function has been disabled!");
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    alert("This function has been disabled!");
+    return false;
+  }
+}, false);
+
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+    alert("This function has been disabled!");
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+    alert("This function has been disabled!");
+    window.event.returnValue = false;
+  });
+}
+   </script>
+</body>
+
+</html>
